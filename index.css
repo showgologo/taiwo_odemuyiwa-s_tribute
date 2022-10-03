@@ -1,0 +1,61 @@
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color:#e1b3825e;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: white;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 500px;
+  border-radius: 10%;
+}
+
+.centered > figcaption{
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.text-right{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0rem 5rem 5rem 5rem;
+    text-align: justify;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.text-right > strong{
+    text-transform: uppercase;
+}
+
+.text-right > ul{
+    list-style:circle;
+}
